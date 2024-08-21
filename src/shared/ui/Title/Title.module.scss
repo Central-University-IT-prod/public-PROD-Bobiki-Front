@@ -1,0 +1,24 @@
+h1.title {
+  font-size: 2rem;
+  @media screen and (max-width: 450px) {
+    font-size: 1.5rem;
+  }
+}
+h2.title {
+  font-size: 1.5rem;
+  @media screen and (max-width: 450px) {
+    font-size: 1.25rem;
+  }
+}
+h3.title {
+  font-size: 1.25rem;
+  @media screen and (max-width: 450px) {
+    font-size: 1rem;
+  }
+}
+h4.title {
+  font-size: 1.1rem;
+}
+h5.title {
+  font-size: 1rem;
+}

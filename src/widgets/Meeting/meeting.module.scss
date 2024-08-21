@@ -1,0 +1,45 @@
+.meeting {
+  background-color: var(--form-bg-color);
+  width: min(100%, 600px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+.courierInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.meetingInfo {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .meetingInfoBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &.noFlex {
+      flex-direction: row;
+      gap: 10px;
+    }
+  }
+}
+.controlButtons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}

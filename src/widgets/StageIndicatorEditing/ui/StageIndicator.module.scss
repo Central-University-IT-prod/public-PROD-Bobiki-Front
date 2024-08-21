@@ -1,0 +1,36 @@
+.stageIndicator {
+  display: flex;
+  gap: 10px;
+  width: 95%;
+  position: fixed;
+  top: 10px;
+  left: 0.5;
+  transform: translateX(-0.5);
+}
+
+.stage {
+  height: 3px;
+  flex-grow: 1;
+  border-radius: 3px;
+  position: relative;
+  &::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    margin-top: 10px;
+  }
+  background-color: #d9d9d9;
+  &.active {
+    background-color: #ffcd33;
+  }
+
+  &.completed {
+    background-color: #6ba4fa;
+  }
+}

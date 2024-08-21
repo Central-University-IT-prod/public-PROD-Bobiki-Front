@@ -1,0 +1,73 @@
+.meetings,
+.notFound {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  background-color: var(--form-bg-color);
+  border-radius: 10px;
+  min-width: min(100%, 400px);
+  text-align: center;
+}
+
+.notFound {
+  padding: 20px;
+}
+
+.meetings {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .meeting {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    transition: 0.5s background-color ease-in-out;
+    background-color: var(--form-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    &:hover {
+      background-color: var(--button-bg-color);
+      .meetingTitle::after {
+        background-color: var(--form-bg-color);
+      }
+    }
+    &:not(:last-child)::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 2px;
+    }
+
+    .meetingTitle {
+      position: relative;
+      padding-right: 20px;
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "";
+        height: 100%;
+        width: 1px;
+        background-color: var(--button-bg-color);
+      }
+    }
+    .meetingLink {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      opacity: 0;
+    }
+  }
+}

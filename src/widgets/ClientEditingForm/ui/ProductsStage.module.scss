@@ -1,0 +1,40 @@
+.inputs {
+  margin-bottom: 20px;
+  > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.form {
+  display: flex;
+  background-color: var(--form-bg-color);
+  flex-direction: column;
+  min-width: min(100%, 400px);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.multiInputContainer {
+  margin-bottom: 20px;
+  .multiInput {
+    padding: 10px;
+    background-color: var(--form-element-bg-color);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    max-width: 400px;
+  }
+  .closeButton {
+    display: none;
+  }
+  .p-multiselect-panel {
+    position: relative;
+    padding: 20px;
+    background-color: var(--form-element-bg-color);
+  }
+}
+
+.documentTitle {
+  font-size: 1rem !important;
+  margin-bottom: 20px;
+}

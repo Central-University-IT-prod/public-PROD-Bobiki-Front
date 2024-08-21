@@ -1,0 +1,18 @@
+.page {
+  width: 100%;
+  min-height: calc(100vh + 20px);
+  display: flex;
+  overflow: hidden;
+  padding-inline: 20px;
+  padding-bottom: 20px;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}

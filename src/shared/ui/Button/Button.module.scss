@@ -1,0 +1,14 @@
+.button {
+  background-color: var(--button-bg-color) !important;
+  display: flex !important;
+
+  justify-content: center !important;
+  align-self: center !important;
+  padding: var(--button-padding) !important;
+  border-radius: 10px !important;
+
+  font-size: var(--font-l) !important;
+  &:disabled {
+    opacity: 0.5;
+  }
+}
